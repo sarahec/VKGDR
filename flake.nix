@@ -52,12 +52,15 @@
           languages.python = {
             enable = true;
             package = (pkgs.python3.withPackages (ps: with ps; with pkgs.python3Packages; [
+              cupy
               jsonlines
-              tabulate
+              nltk
               numpy
-              scipy
               pip
               pytorch
+              scipy
+              spacy
+              tabulate
               tqdm
             ]));
             venv = {
@@ -76,6 +79,7 @@
 
           packages = with pkgs; [
             curl
+            noti
             wget
           ];
 
