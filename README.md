@@ -48,7 +48,7 @@ bzip2 -d full_technote_collection.txt.bz2
 
 ```
 cd $PROJECT_DIR/code
-bash scripts/generate_pretraining_data.sh
+scripts/generate_pretraining_data.sh
 ```
 
 This step takes a while
@@ -57,35 +57,35 @@ This step takes a while
 
 ```
 cd $PROJECT_DIR/code
-bash scripts/preprocess_techqa_full_technote_collection.sh
-bash scripts/preprocess_techqa_corpus.sh
-bash scripts/preprocess_techqa_train_dev_corpus.sh
+scripts/preprocess_techqa_full_technote_collection.sh
+scripts/preprocess_techqa_corpus.sh
+scripts/preprocess_techqa_train_dev_corpus.sh
 ```
 
 3. Preprocess the TechQA train and dev set
 
 ```
-bash scripts/extract_techqa_qa_pairs.sh
+scripts/extract_techqa_qa_pairs.sh
 ```
 
 ## Pre-train the relation encoder on the Wikipedia and TechQA datasets
 
 ```
-bash scripts/pretrain_relation_encoder.sh
-bash scripts/train_techqa_relation_encoder_same_doc.sh
+scripts/pretrain_relation_encoder.sh
+scripts/train_techqa_relation_encoder_same_doc.sh
 ```
 
 ## Construct a corpus-VKG
 
 ```
-bash scripts/extract_dev_pmi_dev_corpus.sh
-bash scripts/construct_techqa_vkg.sh
+scripts/extract_dev_pmi_dev_corpus.sh
+scripts/construct_techqa_vkg.sh
 ```
 
 ## Construct a query-VKG
 
 ```
-bash scripts/vkg_techqa_qa.sh
+scripts/vkg_techqa_qa.sh
 ```
 
 ## Compute BM25 similarity
