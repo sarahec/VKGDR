@@ -84,8 +84,8 @@
               wget https://nlp.stanford.edu/projects/hotpotqa/enwiki-20171001-pages-meta-current-withlinks-processed.tar.bz2
               wget https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-page_props.sql.gz
               tar -xvf enwiki-20171001-pages-meta-current-withlinks-processed.tar.bz2
-              mkdir -p $PROJECT_DIR/data/KGQA/wikipedia/enwiki_whole
-              mv enwiki-20171001-pages-meta-current-withlinks-processed/* $PROJECT_DIR/data/KGQA/wikipedia/enwiki_whole/
+              mkdir -p $PROJECT_DIR/data/wikipedia/enwiki_whole
+              mv enwiki-20171001-pages-meta-current-withlinks-processed/* $PROJECT_DIR/data/wikipedia/enwiki_whole/
               gzip -d enwiki-latest-page_props.sql.gz
               mkdir -p $PROJECT_DIR/data/wikipedia/enwiki_props
               mv enwiki-latest-page_props.sql $PROJECT_DIR/data/wikipedia/enwiki_props/
