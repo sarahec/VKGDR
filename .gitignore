@@ -1,4 +1,7 @@
 .devenv
 .direnv
+.downloads
 
 data/
+outputs/
+*.pyc
