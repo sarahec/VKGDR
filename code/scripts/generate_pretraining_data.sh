@@ -1,5 +1,8 @@
+#! /usr/bin/env bash
 DATA_DIR=$PROJECT_DIR/data/wikipedia
 OUTPUT_DIR=$PROJECT_DIR/outputs/pretraining_data
+
+mkdir -p $OUTPUT_DIR
 
 python generate_pretraining_data.py \
     --preprocess_wikipedia \
@@ -8,7 +11,7 @@ python generate_pretraining_data.py \
     --build_pretraining_data \
     --filter_sentences_and_get_target_pairs \
     --split_train_valid \
-    --wikipedia_dump_file $DATA_DIR/enwiki_whole_toy \
+    --wikipedia_dump_file $DATA_DIR/enwiki_whole \
     --wikidata_dump_file $DATA_DIR/enwiki_props/enwiki-latest-page_props.sql \
     --wiki_prep_file $OUTPUT_DIR/enwiki_whole_preprocessed.jsonl \
     --wikiid2wikidataid_file $OUTPUT_DIR/wikiid2wikidataid.json \
