@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 DATA_DIR=$PROJECT_DIR/dataTechQA
 OUTPUT_DIR=$PROJECT_DIR/outputs
 CHECKPOINT_DIR=$PROJECT_DIR/checkpoints

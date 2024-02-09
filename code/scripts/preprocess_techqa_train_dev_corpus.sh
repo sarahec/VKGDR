@@ -1,6 +1,9 @@
-DATA_DIR=$WORKING_DIR/data/TechQA
-OUTPUT_DIR=$WORKING_DIR/outputs
-CHECKPOINT_DIR=$WORKING_DIR/checkpoints
+#! /usr/bin/env bash
+DATA_DIR=$PROJECT_DIR/data/TechQA
+OUTPUT_DIR=$PROJECT_DIR/outputs
+CHECKPOINT_DIR=$PROJECT_DIR/checkpoints
+
+mkdir -p $CHECKPOINT_DIR
 
 python preprocess_techqa_corpus.py \
     --preprocess_techqa \

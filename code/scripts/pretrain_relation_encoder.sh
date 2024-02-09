@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 OUTPUT_DIR=$PROJECT_DIR/outputs/pretraining_data
 CHECKPOINT_DIR=$PROJECT_DIR/checkpoints
 

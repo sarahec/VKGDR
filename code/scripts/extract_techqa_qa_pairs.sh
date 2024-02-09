@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 DATA_DIR=$PROJECT_DIR/data/TechQA
 OUTPUT_DIR=$PROJECT_DIR/outputs
 

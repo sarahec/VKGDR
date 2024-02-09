@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 OUTPUT_DIR=$PROJECT_DIR/outputs
 
 python extract_dev_pmi_dev_corpus.py \
